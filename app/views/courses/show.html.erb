@@ -22,17 +22,21 @@
   </div>
 
   <div class="col-xs-12">
-    <br />
+    <br /> 
     <% @course.sections.each do |section| %>
       <div class="section">
         <%= section.title %>
         <% section.lessons.each do |lesson| %>
           <div class="lesson">
+            <ul>
             <%= link_to lesson_path(lesson) do %>
+              <li>
               <b><%= lesson.title %></b>
               -
               <%= lesson.subtitle %>
+              </li>
             <% end %>
+            </ul>
           </div>
         <% end %>
       </div>
