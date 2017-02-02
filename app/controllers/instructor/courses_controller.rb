@@ -28,7 +28,6 @@ class Instructor::CoursesController < ApplicationController
 
   helper_method :current_course
   def current_course
-    # @current_course ||= Course.first
     @current_course ||= Course.find(params[:id])
   end
 
