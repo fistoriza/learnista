@@ -59,9 +59,37 @@
 
 <div id="footer">
   <div class="container">
-    <b>Instructors</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+    <div class="col-xs-12 col-sm-3">
+      <h4>Instructors</h4>
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <br />
+      <%= link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h4>About</h4>
+      <%= link_to 'Team', '#' %>
+      <br />
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', privacy_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <h4>Contact</h4>
+      fistoriza@me.com
+      <br />
+      West Bay
+      <br />
+      Doha, Qatar
+    </div>
+    <div class="col-xs-12 col-sm-3 social">
+      <h4>Social</h4>
+      <%= link_to 'http://github.com/fistoriza' do %>
+        <%= image_tag 'github.png', class: 'social-button' %>
+      <% end %>
+      <%= link_to 'http://twitter.com/fistomacho' do %>
+        <%= image_tag 'twitter.png', class: 'social-button' %>
+      <% end %>
+    </div>
   </div>
 </div>
 
